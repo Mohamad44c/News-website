@@ -1,0 +1,53 @@
+.mostRead__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.mostRead_dropdowns {
+  width: 50%;
+}
+
+.mostRead__heading {
+  width: 100%;
+  color: rgb(47, 165, 133);
+}
+
+.mostRead__img {
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+  object-fit: cover;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #343642;
+  color: #fff;
+}
+
+.accordion-button {
+  color: rgb(47, 165, 133);
+}
+
+.accordion-item {
+  background-color: rgb(238, 238, 238);
+}
+
+.accordion-button:not(.collapsed) .accordion-button::after {
+  filter: none;
+}
+
+@media screen and (max-width: 1050px) {
+  .mostRead_dropdowns {
+    width: 100%;
+  }
+  .mostRead__wrapper {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .mostRead__img {
+    margin-top: 20px;
+  }
+}
